@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { ImageSource } from "@/components/image";
 
 export default function NotFoundScreen() {
   return (
@@ -12,6 +13,7 @@ export default function NotFoundScreen() {
         <ThemedText style={{textAlign: 'center', marginTop: 16}}>
             The page you are looking for does not exist. Please check the URL or return to the home page.
         </ThemedText>
+        <ImageSource uri="https://picsum.photos/seed/696/3000/2000" />
     </ThemedView>
     );
 }
