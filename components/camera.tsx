@@ -2,6 +2,7 @@ import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons'; // ใช้ Icon เพื่อความสวยงาม
+import React from 'react';
 
 // รับ Props เข้ามาเพื่อให้ Parent (ScanScreen) ควบคุมได้
 export default function CameraComponent({ style, onBarcodeScanned }: { style?: any, onBarcodeScanned?: (scanningResult: any) => void }) {
